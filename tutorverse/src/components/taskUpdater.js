@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Grid } from '@mui/material';
+import TaskList from './tasklist';
 
 function Copyright(props) {
   return (
@@ -30,18 +31,19 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-const tasks = []
+const tasks = {"task": '', "importance":''}
 export default function TaskUpdater() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const task =  data.get('task')
     const taskimportance = data.get('task-importance')
-    tasks.push(task)
+    tasks["task"] = task
+    tasks[task]["Importance"] = taskimportance
     console.log(tasks)
     console.log({
         task: task,
-        importance: taskimportance
+        importance: taskimportance,
         
     });
   };
@@ -95,13 +97,11 @@ export default function TaskUpdater() {
             >
               Add Task 
             </Button>
-            {tasks.length}
           </Box>
         </Box>
         <Grid>
-        {tasks.map((task) => {
-            return <li>{task}</li>
-        })}
+            <TaskList tasks = {tasks}/>
+        
         </Grid>
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
