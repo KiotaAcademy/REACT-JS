@@ -30,4 +30,3 @@ need for state include:
 3. Maintaining component-specific data: Each component in React can have its own state, allowing you to encapsulate and manage data specific to that component. By maintaining component-specific states, you can create reusable and modular components that can be easily composed and combined to build complex user interfaces.
 4. Asynchronous operations: States are particularly useful when dealing with asynchronous operations, such as fetching data from an API or handling user input. Asynchronous operations may take time to complete, and states allow you to update the UI based on the loading or success/failure status of these operations
 5. Stateful behavior: Some components need to remember and preserve certain information across multiple renders. For example, a form component may need to remember the values entered by the user until they are submitted. States provide a way to store and update this kind of stateful behavior.
-
