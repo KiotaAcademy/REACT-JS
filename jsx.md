@@ -9,4 +9,3 @@ JSX is a syntax extension for Javascript that lets you write HTML-like markup in
 3. camelCase Most things.
 
 ## rendering a list of components in JSX
-
