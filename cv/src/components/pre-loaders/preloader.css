@@ -1,0 +1,15 @@
+/* styles.css or styles.scss */
+.preloader {
+  /* Center the preloader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this as needed to cover the entire viewport */
+}
+
+/* Optional styling for the GIF */
+.preloader img {
+  /* Add any custom styles to adjust the appearance of the loading GIF */
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px;
+}

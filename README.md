@@ -1,5 +1,7 @@
 # REACT JS
 
+[pre-loader](https://icons8.com/preloaders/en/science)
+
 React is one of the most powerful, widely used frontend frameworks.
 
 React Js allows for:
