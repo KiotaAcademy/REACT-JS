@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Preloader from './components/pre-loaders/preloader'
+import Cv from './components/cv-page/cv'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -12,7 +13,7 @@ function App() {
   return (
     <>
       <div>
-        {loading? <Preloader/>: "Hello"}
+        {loading? <Preloader/>: <Cv/>}
       </div>
     </>
   )
