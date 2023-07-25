@@ -71,3 +71,6 @@ here is an object: *`const obj = {name: "John", age: 30, city: "New York"};`*
 
 here is how to stringfy it: *`const myJSON = JSON.stringify(obj);`*
 
+## .json()
+
+this is used with fetch and axios apis to jsonfy strings sent back by the api calls.
