@@ -54,3 +54,20 @@ lets say you have the below json file:
 ```
 
 to access elements you: `json.homeTown` or `json["active"]`
+
+## json.parse()
+
+when receiving data from the internet, it is normally in string form and we need to convert it to  become a js object
+
+you do so using json.parse()
+
+this is how it is received *'{"name":"John", "age":30, "city":"New York"}'*, and this is how it is to be formatted: *`const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');`*
+
+## json.stringfy()
+
+when sending data in the internet, it has to be a string
+
+here is an object: *`const obj = {name: "John", age: 30, city: "New York"};`*
+
+here is how to stringfy it: *`const myJSON = JSON.stringify(obj);`*
+
