@@ -36,3 +36,4 @@ fetch api is a modern javaScript interface for making Network requests in a web 
 so the syntax is `fetch(api)` and then jsonfy it `response.json()`
 
 The Fetch API supports various options for configuring the request, such as setting headers, specifying request methods (GET, POST, etc.), and sending data in the request body for methods like POST and PUT
+
