@@ -43,3 +43,24 @@ when a web page is requested by a browser, the page downloaded includes minimal 
 1. NextJS (`npx create-next-app@latest name-of-your-app`)
 2. Create React App (CRA)
 
+## functional programming (F(G(X)))
+
+functional programming is all about functional composition - it means that a function returns another function that can in turn return another function.
+
+it helps build complex apps by combining smaller functions.
+
+## why react?
+
+1. flexibility
+2. developer experience
+3. community
+4. corporate investment
+5. testability
+6. performance
+
+## jsx and js
+
+when we write react, we use a lot of JSX that is to say `<div><h1 color = 'red'>this is JSX here</h1></div>`
+
+jsx is then normally compiled to plain js `React.createElement("h1", {color: 'red'}, 'this is JSX here')`
+
