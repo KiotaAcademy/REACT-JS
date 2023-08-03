@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div className='container'>
-      <Header/>
+      <Header subtitle="providing houses all over the world" title = "multiverseK"/>
     </div>
     </>
   )
