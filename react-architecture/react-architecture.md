@@ -1,6 +1,12 @@
 # REACT ARCHITECTURE
 
-react is 100% component based
+react is 100% component based (we are just creating components)
+
+components can:
+
+1. Accept inputs from other components (using props)
+2. it can maintain an internal state
+3. it knows how to render itself
 
 All react apps start by rendering a single root component.
 
@@ -63,4 +69,10 @@ it helps build complex apps by combining smaller functions.
 when we write react, we use a lot of JSX that is to say `<div><h1 color = 'red'>this is JSX here</h1></div>`
 
 jsx is then normally compiled to plain js `React.createElement("h1", {color: 'red'}, 'this is JSX here')`
+
+what translates jsx to js? Babel
+
+## React DOM
+
+deals with what the user now sees
 
