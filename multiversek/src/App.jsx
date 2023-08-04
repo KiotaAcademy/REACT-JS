@@ -5,6 +5,7 @@ import Header from './components/header'
 import FeaturedHouse from './components/featuredhouse'
 import SearchResults from './components/searchResults/searchresultsindex'
 import HouseFilter from './components/housefilter'
+import HousefromQuery from './components/searchResults/housefromquery'
 
 function App() {
   const [allHouses, setAllHouses] = useState([])
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route exact path='/' element= {<FeaturedHouse house={featuredHouse}/>}/>
         <Route path='/searchresults/:country' element= {<SearchResults allHouses={allHouses}/>}/>
+        <Route  path='/house/:id' element= {<HousefromQuery allHouses={allHouses}/>}/>
       </Routes>
     </Router>
   )
