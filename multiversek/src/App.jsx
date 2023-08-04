@@ -3,6 +3,8 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/header'
 import FeaturedHouse from './components/featuredhouse'
+import SearchResults from './components/searchResults/searchresultsindex'
+import HouseFilter from './components/housefilter'
 
 function App() {
   const [allHouses, setAllHouses] = useState([])
@@ -26,9 +28,11 @@ function App() {
     <Router>
       <div className='container'>
         <Header subtitle="providing houses all over the world" title = "multiverseK"/>
+        <HouseFilter allHouses={allHouses}/>
       </div>
       <Routes>
-        <Route path='/' element= {<FeaturedHouse house={featuredHouse}/>}/>
+        <Route exact path='/' element= {<FeaturedHouse house={featuredHouse}/>}/>
+        <Route path='/searchresults/:country' element= {<SearchResults allHouses={allHouses}/>}/>
       </Routes>
     </Router>
   )
