@@ -1,4 +1,3 @@
-import { useEffect, useMemo, useState } from 'react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/header'
@@ -7,16 +6,11 @@ import SearchResults from './components/searchResults/searchresultsindex'
 import HouseFilter from './components/housefilter'
 import HousefromQuery from './components/searchResults/housefromquery'
 import useHouses from './components/hooks/useHouses'
+import useFeaturedHouse from './components/hooks/useFeaturedHouse'
 
 function App() {
   const allHouses = useHouses()
-
-  const featuredHouse = useMemo(()=>{
-    if (allHouses.length){
-      const randomIndex = Math.floor(Math.random() * allHouses.length)
-      return allHouses[randomIndex]
-    }
-  }, [allHouses])
+  const featuredHouse = useFeaturedHouse(allHouses)
   return (
     <Router>
       <div className='container'>

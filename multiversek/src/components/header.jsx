@@ -6,7 +6,7 @@ export default function Header({subtitle, title}){
         <>
         <header className = "row">
             <div className="col-md-2">
-                <img src="/images/klogo.jpg" alt="Logo" className="img-fluid logo" onClick={(event)=> navigate('/')}/>
+                <img src="/images/klogo.jpg" alt="Logo" className="img-fluid logo" onClick={()=> navigate('/')}/>   
             </div>
             <div className='col-md-7 mt-5 subtitle'>
                 {subtitle}
