@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/header'
+import FeaturedHouse from './components/featuredhouse'
 
 function App() {
   const [allHouses, setAllHouses] = useState([])
   useEffect(()=>{
     const fetchHouses = async () => {
-      const response = await fetch('./houses.json')
+      const response = await fetch('/src/houses.json')
       const houses = await response.json()
+      console.log(houses)
       setAllHouses(houses)
     }
     fetchHouses()
@@ -25,11 +27,9 @@ function App() {
       <div className='container'>
         <Header subtitle="providing houses all over the world" title = "multiverseK"/>
       </div>
-      <Switch>
-        <Route path='/'>
-          
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path='/' element= {<FeaturedHouse house={featuredHouse}/>}/>
+      </Routes>
     </Router>
   )
 }
