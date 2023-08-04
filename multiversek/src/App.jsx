@@ -6,18 +6,10 @@ import FeaturedHouse from './components/featuredhouse'
 import SearchResults from './components/searchResults/searchresultsindex'
 import HouseFilter from './components/housefilter'
 import HousefromQuery from './components/searchResults/housefromquery'
+import useHouses from './components/hooks/useHouses'
 
 function App() {
-  const [allHouses, setAllHouses] = useState([])
-  useEffect(()=>{
-    const fetchHouses = async () => {
-      const response = await fetch('/src/houses.json')
-      const houses = await response.json()
-      console.log(houses)
-      setAllHouses(houses)
-    }
-    fetchHouses()
-  },[])
+  const allHouses = useHouses()
 
   const featuredHouse = useMemo(()=>{
     if (allHouses.length){
