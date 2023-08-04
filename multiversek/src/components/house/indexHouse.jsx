@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './house.css'
+import Inquiry from '../inquiry'
 
 export default function House({house}){
+    const [inquiry, setInquiry] = useState(false)
+    function inquiryClick(){
+        setInquiry(!inquiry)
+    }
     return (
         <div>
             <div className='row mt-2'>
@@ -16,6 +22,8 @@ export default function House({house}){
                 <div className='col-md-5'>
                     <p className='price'>${house.price}</p>
                     <p>{house.description}</p>
+                    <img src='/images/email.webp' height='50' alt='inquiry' onClick={inquiryClick}/>
+                    { inquiry && <Inquiry house={house}/>}
                 </div>
             </div>
         </div>
