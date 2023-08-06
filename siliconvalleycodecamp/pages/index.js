@@ -1,5 +1,11 @@
-import React from 'react'
+import  { useState } from 'react'
 
 export default function InputElement(){
-    return <input placeholder = "some text in the multiverse savannah"/>
+    const [inputValue, setInputValue] = useState("")
+    return (
+        <div>
+            <input placeholder = "some text in the multiverse savannah" onChange={(event)=>{setInputValue(event.target.value)}}/>
+            {inputValue}
+        </div>
+    )
 }
