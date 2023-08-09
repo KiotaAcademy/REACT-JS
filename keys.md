@@ -7,7 +7,7 @@ to achieve this you use react keys
 Keys are passed into the component or a DOM element as a prop.
 
 ```js
-<LinkComponent key={keyValue}/>
+<LinkComponent key={keyValue} />
 ```
 
 keys normally work well with react props - properties
@@ -45,10 +45,8 @@ function ChildFunction(props){
 to destructure props you can either do so inside your function (as show above) or in the function definition level as shown below:
 
 ```js
-function ChildFunction({text, color}){
-return (
-    <>{text}</>
-)
+function ChildFunction({ text, color }) {
+  return <>{text}</>;
 }
 ```
 
@@ -56,9 +54,9 @@ to catch the error where we might fail to pass all the props in the place we cal
 
 ```js
 ChildFunction.defaultProps = {
-    text: 'No value passed',
-    color: 'No color passed'
-}
+  text: "No value passed",
+  color: "No color passed",
+};
 ```
 
 you can also pass this default props with the function definition that is to say:

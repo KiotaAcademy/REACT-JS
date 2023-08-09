@@ -1,6 +1,4 @@
 {
-    "appService.zipIgnorePattern": [
-        ".vscode{,/**}"
-    ],
-    "appService.deploySubpath": "build"
+  "appService.zipIgnorePattern": [".vscode{,/**}"],
+  "appService.deploySubpath": "build"
 }

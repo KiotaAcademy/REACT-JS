@@ -13,7 +13,7 @@ function Cart({ products }) {
   const totalPrice = useMemo(() => {
     return products.reduce(
       (total, product) => total + product.price * product.quantity,
-      0
+      0,
     );
   }, [products]);
 
@@ -29,4 +29,3 @@ function Cart({ products }) {
   );
 }
 ```
-

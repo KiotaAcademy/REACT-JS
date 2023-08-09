@@ -18,3 +18,5 @@ the current way of setting up react application is `npm create vite@latest my-fi
 ## React Testing
 
 [settin up a reactjs](`npm install @testing-library/user-event --save-dev`)
+
+prettier format `npx prettier . --write`

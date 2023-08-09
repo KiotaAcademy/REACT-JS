@@ -15,7 +15,7 @@ const render = () => {
     { className: "split" },
     "React template ",
     React.createElement("input"),
-    React.createElement("p", null, new Date().toString())
+    React.createElement("p", null, new Date().toString()),
   );
 
   ReactDOM.render(divToRender, reactDiv);

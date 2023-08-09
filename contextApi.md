@@ -13,15 +13,13 @@ to use createContext you:
 `import { createContext } from "react"`
 
 ```js
-import { createContext } from "react"
+import { createContext } from "react";
 
 const product = createContext({
-    product: [],
-    addToCart: () => {
-
-    },
-    delivery: "",
-})
+  product: [],
+  addToCart: () => {},
+  delivery: "",
+});
 ```
 
 we can as well
@@ -37,4 +35,3 @@ This hook is used to consume data from a context object created by createContext
 ## ContextObject.Provider
 
 The context object comes with the Provider component that accepts a prop called value, which is the context value that’s going to be passed down to the components no matter how deeply they’re nested. In other words, a way to “provide” the context value to these components
-

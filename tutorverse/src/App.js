@@ -1,10 +1,10 @@
-import './App.css';
-import TaskUpdater from './components/taskUpdater';
+import "./App.css";
+import TaskUpdater from "./components/taskUpdater";
 
 function App() {
   return (
     <div className="App">
-      <TaskUpdater/>
+      <TaskUpdater />
     </div>
   );
 }

@@ -75,4 +75,3 @@ what translates jsx to js? Babel
 ## React DOM
 
 deals with what the user now sees
-

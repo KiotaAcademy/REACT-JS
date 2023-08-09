@@ -6,7 +6,7 @@ The changes could be as simple as toggling a dropdown menu or as complex as fetc
 
 React provides primitives to manipulate the state of your apps, more specifically components, to make them dynamic. In this lesson, we will learn how to use state in React.
 
-*state is a component's memory* - we need components to remember things about themselves. components along the way may change how they appear and relate with each other.
+_state is a component's memory_ - we need components to remember things about themselves. components along the way may change how they appear and relate with each other.
 
 ## useState hook
 
@@ -37,4 +37,4 @@ this is react states in essence. you cannot directly update states, you have to 
 
 states updates are asynchronous. this means that whenever you call setState function, React will apply the update in the next component render.
 
-every other time you call a *setState* it calls a re-renders the entire component. he setState call triggers a component re-render
+every other time you call a _setState_ it calls a re-renders the entire component. he setState call triggers a component re-render
