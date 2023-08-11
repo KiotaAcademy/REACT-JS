@@ -15,6 +15,12 @@ fetch(api, { mode: "cors" })
   .catch((error) => console.log("Error"));
 ```
 
+fetch() will always return a promise, that is why we use `fetch().then()`
+
+this fetch response is returned in a raw response that is why we need to jsonfy it by `response.json()`.then you can now start to destructure it
+
+json is an asychronous method an it returns a promise as well that is why we use a .then
+
 in react, to use fetch data api we normally wrap it in a `"useEffect"`.
 
 ```js
