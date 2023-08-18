@@ -5,18 +5,18 @@ A pure function is a function that always produces the same output for the same 
 study two functions below
 
 ```js
-var conversionRate = 1.5
+var conversionRate = 1.5;
 
-function convertAmount(amount){
-    return amount * conversionRate
+function convertAmount(amount) {
+  return amount * conversionRate;
 }
-convertAmount(30)
+convertAmount(30);
 
-function convertThisAmount(amount, rate){
-    return amount * rate
+function convertThisAmount(amount, rate) {
+  return amount * rate;
 }
 
-convertThisAmount(30, conversionRate)
+convertThisAmount(30, conversionRate);
 ```
 
 the difference between `convertAmount` and `convertThisAmount` is that the latter takes two parameters.
@@ -28,4 +28,3 @@ the latter function is a pure function (relies only on the arguments passed in) 
 1. only access local variables
 2. no side effects
 3. Given the same input, they will always render the same output
-

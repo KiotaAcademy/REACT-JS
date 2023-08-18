@@ -2,9 +2,9 @@
 
 ```js
 async () => {
-    const response = await fetch("pass your url")
-    const data = await response.json()
-}
+  const response = await fetch("pass your url");
+  const data = await response.json();
+};
 ```
 
 both the fetch and response returns a promise that is why we must await for the promises.

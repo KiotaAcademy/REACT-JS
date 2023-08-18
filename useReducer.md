@@ -14,14 +14,14 @@ let say we have a counter we need to either incriment or decriment, or even mult
 to manage such kind of variables we use `useReducer`.
 
 ```js
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 // Reducer function
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return { count: state.count + 1 };
-    case 'DECREMENT':
+    case "DECREMENT":
       return { count: state.count - 1 };
     default:
       return state;
@@ -35,10 +35,9 @@ function Counter() {
   return (
     <div>
       <p>Count: {state.count}</p>
-      <button onClick={() => dispatch({ type: 'INCREMENT' })}>Increment</button>
-      <button onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement</button>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrement</button>
     </div>
   );
 }
-
 ```

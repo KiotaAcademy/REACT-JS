@@ -7,7 +7,6 @@ import HouseFilter from "./components/housefilter";
 import HousefromQuery from "./components/searchResults/housefromquery";
 import useHouses from "./components/hooks/useHouses";
 import useFeaturedHouse from "./components/hooks/useFeaturedHouse";
-
 function App() {
   const allHouses = useHouses();
   const featuredHouse = useFeaturedHouse(allHouses);

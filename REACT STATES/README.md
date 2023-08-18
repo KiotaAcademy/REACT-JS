@@ -10,4 +10,3 @@ the are about 8 ways to handle states in react
 6. Refs - DOM reference, uncontrolled components
 7. Context - avoid passing props
 8. Third party library
-
