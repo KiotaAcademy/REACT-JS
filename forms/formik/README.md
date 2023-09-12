@@ -26,3 +26,35 @@ It internally manages the state of form values, form errors, whether a field has
 3. touched - it contains a boolean if the field has ever been used or touched or focused by user
 
 all these fields are automatically maintained by formik.
+
+## functional form in formik
+
+```js
+<Formik
+    initialValues = {{username: 'jared'}}
+    validate = {(values, props) => {
+        // validational logic
+    }}
+    onSubmit{(values, actions)=>
+        const uname = values.username
+    }
+
+>
+    {props = (
+        <form>
+            <Field name="username", type = "text"/>
+        </form>
+    )
+
+    }
+</Formik>
+```
+
+## formik helper
+
+1. isSubmitting - indicates if the form is inder submission
+2. setSubmitting - sets a form's submission phase
+3. isValid - indicates if form input is valid
+4. isValidating - indicates if form is being indicated.
+5. resetForm - reset the form using the initial given json data
+
