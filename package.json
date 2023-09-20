@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "expo-font": "^11.6.0"
   }
 }
